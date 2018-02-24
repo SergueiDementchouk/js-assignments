@@ -73,9 +73,7 @@ function getStringFromTemplate(firstName, lastName) {
  */
 function extractNameFromTemplate(value) {
    	return value.slice(7,-1);
- 
-   //throw new Error('Not implemented');
-}
+   }
 
 
 /**
@@ -90,9 +88,7 @@ function extractNameFromTemplate(value) {
  */
 function getFirstChar(value) {
    	return value.charAt(0);
- 
-   //throw new Error('Not implemented');
-}
+ }
 
 /**
  * Removes a leading and trailing whitespace characters from string.
@@ -222,8 +218,8 @@ function getRectangleString(width, height) {
       topLine = '┌' + ('─').repeat(width - 2) + '┐' + '\n';
 		middleLine = '│' + (' ').repeat(width - 2) + '│' + '\n';
 		bottomLine = '└' + ('─').repeat(width - 2) + '┘';
-    return topLine + middleLine + bottomLine;	 
-   //throw new Error('Not implemented');
+    return topLine + middleLine.repeat(height-2) + bottomLine;	 
+   
 }
 
 
