@@ -218,7 +218,7 @@ function getRectangleString(width, height) {
 	var topLine='',middleLine='', bottomLine='';
       	topLine = '┌' + ('─').repeat(width - 2) + '┐' + '\n';
 	middleLine = '│' + (' ').repeat(width - 2) + '│' + '\n';
-	bottomLine = '└' + ('─').repeat(width - 2) + '┘';
+	bottomLine = '└' + ('─').repeat(width - 2) + '┘'+'\n';
     return topLine + middleLine.repeat(height-2) + bottomLine;	 
    
 }
