@@ -204,14 +204,14 @@ function roundToPowerOfTen(num, pow) {
 function isPrime(n) {
     var i; 
     var numberNonZeroModuloDivisions=0; 
-        for(i=2;i<n;i++){ 
+        for(i=2;i<=n;i++){ 
             if((n%i)!==0) 
             numberNonZeroModuloDivisions+=1; 
          } 
     if(NonZeroModuloDivisions==(n-2)){ 
-        return true 
+        return true; 
     } 
-    else return false 
+    else return false; 
 }
 
 
